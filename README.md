@@ -1,0 +1,59 @@
+School Parent Helpdesk : Academic Project Report
+
+Abstract:
+This project presents a smart School Parent Helpdesk Chatbot designed to assist parents with queries related to school facilities, enrollment, exam dates, and more. Leveraging modern AI technologies, the chatbot integrates document retrieval and conversational AI to provide accurate, context-aware responses. The solution is implemented using Gradio for the user interface, FAISS for vector search, Sentence Transformers for embeddings, and NVIDIA's LLM API for natural language understanding.
+
+Introduction:
+Effective communication between schools and parents is crucial for student success. Traditional helpdesks are often limited by human resources and availability. This project aims to automate the helpdesk process using AI, enabling parents to get instant answers to their questions by interacting with a chatbot trained on school documents.
+
+Technical Requirements:
+- Python 3.x
+- Gradio
+- FAISS (CPU)
+- Sentence Transformers
+- LangChain
+- PyPDF2
+- python-docx
+- pandas
+- NVIDIA LLM API access
+
+Technologies Used:
+- Gradio: For building the interactive web-based chatbot UI.
+- FAISS: For efficient similarity search over document embeddings.
+- Sentence Transformers: For generating semantic embeddings from text.
+- LangChain: For text splitting and document management.
+- PyPDF2, python-docx, pandas: For reading and processing PDF, DOCX, and CSV files.
+- NVIDIA LLM API: For generating context-aware answers using large language models.
+
+Methods:
+1. Document Upload: Parents or administrators upload school documents (PDF, DOCX, TXT, CSV).
+2. Text Extraction: The system reads and extracts text from the uploaded files.
+3. Text Chunking: Documents are split into manageable chunks for embedding.
+4. Embedding: Each chunk is converted into a vector using Sentence Transformers.
+5. Indexing: FAISS builds a vector index for fast similarity search.
+6. Retrieval-Augmented Generation (RAG): On each query, the most relevant document chunks are retrieved and provided as context to the NVIDIA LLM API.
+7. Response Generation: The LLM generates a natural language answer using the retrieved context.
+8. User Interaction: Gradio UI allows users to upload documents, ask questions, and view responses in a chat format.
+
+Inputs:
+- School documents (PDF, DOCX, TXT, CSV)
+- User queries (text questions)
+
+Outputs:
+- Context-aware answers to user queries
+- Chat history
+- Upload status messages
+
+Conclusion:
+The School Parent Helpdesk Chatbot demonstrates how AI can streamline communication between schools and parents. By combining document retrieval and conversational AI, the system provides instant, accurate responses to a wide range of queries. The modular design allows easy adaptation to other domains and document types, making it a valuable tool for educational institutions.
+
+References:
+- Gradio Documentation
+- FAISS Library
+- Sentence Transformers
+- NVIDIA LLM API
+- LangChain Framework
+- PyPDF2, python-docx, pandas documentation
+
+Prepared for: B.Tech Academic Project
+by BANDARI SAI KARTHIK YADAV 
